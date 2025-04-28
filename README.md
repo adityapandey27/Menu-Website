@@ -3,8 +3,8 @@
 ### **1. Clone the Repository**
 
 ```bash
-git clone https://github.com/redsoftware-hq/global-scoring-be-app.git
-cd project
+ git clone https://github.com/horsebuzz/tallytrot-frontend.git
+ cd tallytrot-frontend
 ```
 
 ### **2. Install Dependencies**
@@ -18,24 +18,18 @@ npm install
 Create a `.env` file in the root directory and configure the following:
 
 ```env
-PORT=3000
-MONGODB_URL=<your-mongo-db-uri>  # Or MONGO_URI, adjust to your code
-EMAIL_USER=<default-master-email>
-EMAIL_PASS=<default-master-email-pass>
-RESET_PASSWORD_SECRET=<reset-pass-secret>
-ACCESS_TOKEN_SECRET=<acces-token>
-FRONTEND_URL=<frontend-url>
-# REDIS_URL=<your-redis-url>  # If you are using Redis, uncomment and provide the URL.
+  VITE_BACKEND_API_URL=http://localhost:3000 
+   VITE_SOCKET_URL=http://localhost:3000
 ```
 
 ### **4. Run the Application**
 
 ```bash
-npm start
+npm run dev
 ```
 
-### **4. Create Dummy Data**
+### **4. Create a build**
 
 ```bash
-npm run seed
+npm run build
 ```
